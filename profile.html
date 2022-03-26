@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Palette+Mosaic&family=Raleway:wght@100;400&family=Righteous&display=swap" rel="stylesheet">
+
+    <title>Profile Page</title>
+</head>
+<body>
+
+    <nav>
+		<ol>
+	        <li class="crumb"><a href="./home.html">Home</a></li>
+	        <li class="crumb"><a href="./profile.html">Profile</a></li>
+	        <li class="crumb"><a href="./about.html">About</a></li>
+	    </ol>
+	</nav>
+
+    <content>
+        <h1>About Me</h1>
+
+        <img src="/imgs/Profile_Pic.jpg" id="profile-pic" alt="author climbing at summersville lake, wv">
+
+        <!-- HOBBIES AND SKILLS BOX STARTS HERE -->
+
+        <div id="hobbies-skills-box">
+            <div id="left-side">
+            <h2>Hobbies</h2>
+            <ul> 
+                <li>Climbing</li>
+                <li>Hiking</li>
+                <li>Photography</li>
+                <li>Cooking</li>
+                <li>Music</li>
+            </ul>
+            </div>
+
+            <div id="right-side">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Dev on the rise!</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- ABOUT ME BUTTONS STARTS HERE -->
+        <section id="info-btns"> 
+        <div>
+            <button id="color" class="fav-btns">My Favorite Color</button>
+        </div>
+        <div>
+            <button id="place" class="fav-btns">My Favorite Place</button>
+        </div>
+        <div>
+            <button id="ritual" class="fav-btns">My Favorite Ritual</button>
+        </div>
+        </section>
+
+        <!-- LOWER ABOUT ME PARAGRAPH STARTS HERE -->
+
+        <div id="about-me">
+            <p>Highlighted above are just a few things about me! 
+                My wife, our dog and I spend a lot of our free time outdoors, mainly in Fayetteville, WV at the New River Gorge. 
+                If I'm not climbing, snapping pics from a fixed line (rope), or selling beer all over Charlotte, NC, you'll find me hunkered down at our house learning how to build web pages.</p>
+            <br><br>
+            <p>My goal is to make a career change out of the sales life, and into the programming world! I love working with people to find the things they're after and problem solving, so this path feels like the right one to me!</p>
+        </div>
+
+<!-- CHORRI SECTION STARTS HERE -->
+
+        <div>
+            <p>Now, on to the part that I'm sure you're after.... </p>
+
+            <img src="/imgs/profile-pic-chorri.jpg"  id="chorri-pic" alt="photo of my pittie, Chorri">
+
+            <p>A photo of my aforementioned dog, Chorri aka "lil Chorizo"</p>
+        </div>
+
+        <form id="chorri-form"> 
+            <label for="nickname">What's your favorite nickname?</label>
+            <br>
+            <select name="nickname" id="nickname">
+            <option>Choose One...</option>
+            <option value="lil Chorizo">lil Chorizo</option>
+            <option value="Spicy Sausage">Spicy Sausage</option>
+            <option value="Muscle Meatball">Muscle Meatball</option>
+            </select>
+            <br><br>
+            <label for="written-answer">Or try your hand at a good nickname below</label>
+            <textarea name="written-answer" id="written-answer" cols="30" rows="5"></textarea>
+            <input type="submit" id="nickname-sbmssn">
+        </form>
+
+    </content>
+    
+    <script src="about.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
+
